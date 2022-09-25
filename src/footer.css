@@ -4,11 +4,18 @@ footer {
 
 .footercard li {
     font-family: 'Poppins', sans-serif;
-    color: white
+    color: white;
+    list-style: square;
 }
 
 .footercard h2 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+    font-variant-caps: all-small-caps;
+
+}
+
+.footercard ul li {
+    padding: 10px;
 }

@@ -2,21 +2,29 @@
 .navbar {
     background-color: #202737;
     opacity: 0.9;
+    border: none;
+    transition: 1s;
 }
+
 
 h1 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
     color: white;
+    display: inline-block;
+    margin: 0;
+    font-variant-caps: all-small-caps;
 }
 
 .guldrubriker {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    color: rgb(191, 146, 91)
+    color: rgb(191, 146, 91);
+    font-variant-caps: all-small-caps;
 }
 
 h3 {
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-variant-caps: all-small-caps;
 
 }
 
@@ -27,6 +35,17 @@ p {
 .navlinks {
     font-family: 'Barlow Semi Condensed', sans-serif;
     list-style-type: none;
+    font-variant-caps: all-small-caps;
+}
+
+.button {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: transparent;
+    border-style: thick;
+    font-variant-caps: all-small-caps;
+    border-color: rgb(191, 146, 91);
+    color: rgb(191, 146, 91);
+    text-align: center;
 }
 
 
@@ -37,23 +56,65 @@ p {
     visibility: hidden;
 }
 
+/* Testing sticky for mobile + endast för telefon:*/
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 34px;
+        margin: 0;
+    }
+
+    #menu-button {
+        float: right;
+        margin: 6px;
+        background-color: #202737;
+        border: none;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: grey;
+        font-variant-caps: all-small-caps;
+
+    }
+
+}
+
+
+
+
+
 
 /* Set visable when menu have menu-open class */
 
 .menu.menu-open {
     opacity: 1;
     visibility: visible;
-    color: #fff;
+    color: white;
+    background-color: #202737;
+    width: 30%;
+    float: right;
+
 }
 
-/* Big screen, hide menu button but show menu */
+/* Big screen, hide menu button but show menu - endast för dator: */
 
 @media screen and (min-width: 600px) {
     .navbar {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
     }
+
+
+    .navbar:hover {
+        background-color: rgb(191, 146, 91);
+        color: black;
+
+    }
+
+
 
     .menu {
         visibility: visible;
@@ -63,6 +124,8 @@ p {
         color: #fff;
         display: flex;
         flex-direction: row;
+
+
     }
 
     .navlinks>li {

@@ -5,12 +5,25 @@
 .reviewcard ul li {
     font-family: 'Poppins', sans-serif;
     list-style-type: none;
+    background-color: white;
 }
 
 .reviewcard blockquote {
     font-family: 'Poppins', sans-serif;
+    background-color: white;
 }
 
 .customer {
     color: rgb(191, 146, 91);
+}
+
+.reviews {
+    background-color: rgb(235 232 222);
+    text-align: center;
+    /* display: grid;
+grid-template-columns: 33%;
+grid-template-rows: 1;
+justify-content: baseline;
+grid-gap: 10px;
+} */
 }
