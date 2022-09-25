@@ -1,0 +1,14 @@
+footer {
+    background-color: black;
+}
+
+.footercard li {
+    font-family: 'Poppins', sans-serif;
+    color: white
+}
+
+.footercard h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    font-weight: bold;
+}

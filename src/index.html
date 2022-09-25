@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop</title>
     <link rel="stylesheet" href="style.css">
+
     <!-- Kolla upp relevanta meta-taggar att lägga till -->
 </head>
 
@@ -19,7 +20,7 @@
                 </h1>
                 <button id="menu-button">Menu</button>
                 <div class="menu">
-                    <ul class="menuopen">
+                    <ul class="navlinks">
                         <li class="navlink active">Home</li>
                         <li class="navlink">About</li>
                         <li class="navlink">Pricing</li>
@@ -29,6 +30,7 @@
                         <li class="navlink">Contact</li>
                     </ul>
                 </div>
+                <!-- 
                 <div class="flexcontainer">
                     <ul class="navbar-desktop">
                         <li class="navflex active">Home</li>
@@ -38,13 +40,13 @@
                         <li class="navflex">Team</li>
                         <li class="navflex">Blog</li>
                         <li class="navflex">Contact</li>
-                </div>
+                </div> -->
             </nav>
         </header>
 
         <!-- Bakgrundsbilden läggs till från CSS -->
         <section>
-            <h2>
+            <h2 class="guldrubriker">
                 Welcome to barbershop
             </h2>
 
@@ -65,32 +67,38 @@
             </div>
             <div class="card">
                 <!-- Bild på skägg -->
-                <h2>Beard Trim</h2>A small river named Duden flows by their place and supplies it with the necessary
-                regelialia. It is a
-                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <h2>Beard Trim</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary
+                    regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
             </div>
             <div class="card">
                 <!-- Bild på rakning -->
-                <h2>Hot Shave</h2>A small river named Duden flows by their place and supplies it with the necessary
-                regelialia. It is a
-                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <h2>Hot Shave</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary
+                    regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
             </div>
             <div class="card">
                 <!-- Bild på hårtvätt -->
-                <h2>Hair Shampoo</h2>A small river named Duden flows by their place and supplies it with the necessary
-                regelialia. It is a
-                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <h2>Hair Shampoo</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary
+                    regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
             </div>
         </section>
 
         <section class="about_us">
             <!-- Bild på stolar -->
-            <h2>About Barber</h2>
+            <h2 class="guldrubriker">About Barber</h2>
             <h3>A smooth barber experience in your town</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonanthia, there live the
+
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonanthia, there live
+                the
                 blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
                 languange ocean. A small river named Duden flows by their place and supplies it with the necessary
                 regelialia.</p>
+
             <div>
                 <p> 20 years of experience</p>
                 <!-- SVG/Bild på kalender -->
@@ -98,7 +106,7 @@
         </section>
 
         <section class="reviews">
-            <h2>Testimonial</h2>
+            <h2 class="guldrubriker">Testimonial</h2>
             <h3>People say about our barber</h3>
             <div class="reviewcard">
                 <blockquote cite="Roger Scott - Customer">Far far away, behind the word mountains, far from the
@@ -106,9 +114,9 @@
                     blind texts.</blockquote>
                 <img src="#">
                 <ul>
-                    <li>★★★★★</li>
+                    <li class="stars">★★★★★</li>
                     <li>Roger Scott</li>
-                    <li>Customer</li>
+                    <li class="customer">Customer</li>
                 </ul>
             </div>
             <div class="reviewcard">
@@ -117,9 +125,9 @@
                     blind texts.</blockquote>
                 <img src="#">
                 <ul>
-                    <li>★★★★★</li>
+                    <li class="stars">★★★★★</li>
                     <li>Roger Scott</li>
-                    <li>Customer</li>
+                    <li class="customer">Customer</li>
             </div>
             <div class="reviewcard">
                 <blockquote cite="Roger Scott - Customer">Far far away, behind the word mountains, far from the
@@ -127,9 +135,9 @@
                     blind texts.</blockquote>
                 <img src="#">
                 <ul>
-                    <li>★★★★★</li>
+                    <li class="stars">★★★★★</li>
                     <li>Roger Scott</li>
-                    <li>Customer</li>
+                    <li class="customer">Customer</li>
             </div>
         </section>
 
@@ -169,8 +177,9 @@
 
         <script>
             const menuBtn = document.querySelector('#menu-button');
+            const menuElement = document.querySelector('.menu')
             menuBtn.addEventListener('click', () => {
-                menuBtn.classList.toggle('menu-open');
+                menuElement.classList.toggle('menu-open');
             });
         </script>
 

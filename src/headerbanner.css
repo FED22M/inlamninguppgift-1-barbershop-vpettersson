@@ -1,24 +1,77 @@
-@media screen and (min-width: 600px) {
-    button#menu-button {
-        display: none;
-    }
+/* Generella fonter */
+.navbar {
+    background-color: #202737;
+    opacity: 0.9;
 }
 
-@media screen and (max-width: 599px) {
-    div.flexcontainer {
-        display: none;
-    }
+h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.guldrubriker {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: rgb(191, 146, 91)
+}
+
+h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navlinks {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    list-style-type: none;
 }
 
 
-button+.menu {
-    display: none;
-    opacity: 0;
+
+/* Small screen -> hide menu*/
+
+.menu {
     visibility: hidden;
 }
 
-button.menu-open+.menu {
-    display: block;
+
+/* Set visable when menu have menu-open class */
+
+.menu.menu-open {
     opacity: 1;
     visibility: visible;
+    color: #fff;
+}
+
+/* Big screen, hide menu button but show menu */
+
+@media screen and (min-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu {
+        visibility: visible;
+    }
+
+    .navlinks {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navlinks>li {
+        padding: 0 0.25rem;
+        list-style: none;
+
+    }
+
+    #menu-button {
+        visibility: hidden;
+    }
 }

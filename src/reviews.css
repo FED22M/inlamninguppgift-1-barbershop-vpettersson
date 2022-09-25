@@ -1,0 +1,16 @@
+.reviewcard .stars {
+    color: rgb(191, 146, 91);
+}
+
+.reviewcard ul li {
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+.reviewcard blockquote {
+    font-family: 'Poppins', sans-serif;
+}
+
+.customer {
+    color: rgb(191, 146, 91);
+}
