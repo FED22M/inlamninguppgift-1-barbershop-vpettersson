@@ -1,3 +1,16 @@
+@media screen and (min-width: 600px) {
+    button#menu-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    div.flexcontainer {
+        display: none;
+    }
+}
+
+
 button+.menu {
     display: none;
     opacity: 0;
