@@ -2,11 +2,19 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: white;
     font-variant-caps: all-small-caps;
+    margin-top: -7rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    
 }
 
 .card p {
     font-family: 'Poppins', sans-serif;
     color: white;
+    margin-top: -50%;
+    font-size: 0.7rem;
+    padding: 5% 10%;
+    
 
 }
 
@@ -21,7 +29,34 @@
 .card {
     display: grid;
     text-align: center;
-    height: 300px;
-    overflow: hidden;
+    place-items: center;
+    height: 40vh;
+    width: 100vw;
+    
+
+}
+
+.card img {
+    place-items: center;
+    width: 10rem;
+    height: 10rem;
+    margin-top: -7.5rem;
+    z-index: 1;
+    
+
+}
+
+
+@media screen and (min-width: 600px) {
+.card img {
+    place-items: center;
+    width: 15rem;
+    height: 15rem;
+    margin-top: -11rem;
+    z-index: 1;
+    
+    
+} 
+
 
 }
