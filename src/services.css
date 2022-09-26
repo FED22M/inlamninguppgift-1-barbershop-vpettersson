@@ -5,7 +5,7 @@
     margin-top: -7rem;
     padding-bottom: 1rem;
     font-size: 2rem;
-    
+
 }
 
 .card p {
@@ -14,7 +14,7 @@
     margin-top: -50%;
     font-size: 0.7rem;
     padding: 5% 10%;
-    
+
 
 }
 
@@ -32,7 +32,7 @@
     place-items: center;
     height: 40vh;
     width: 100vw;
-    
+
 
 }
 
@@ -42,21 +42,21 @@
     height: 10rem;
     margin-top: -7.5rem;
     z-index: 1;
-    
+
 
 }
 
 
 @media screen and (min-width: 600px) {
-.card img {
-    place-items: center;
-    width: 15rem;
-    height: 15rem;
-    margin-top: -11rem;
-    z-index: 1;
-    
-    
-} 
+    .card img {
+        place-items: center;
+        width: 15rem;
+        height: 15rem;
+        margin-top: -11rem;
+        z-index: 1;
+
+
+    }
 
 
 }
