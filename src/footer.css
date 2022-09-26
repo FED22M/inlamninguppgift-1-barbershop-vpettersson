@@ -1,5 +1,6 @@
 footer {
     background-color: black;
+
 }
 
 .footercard li {
@@ -11,9 +12,16 @@ footer {
 .footercard h2 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: white;
-    font-weight: 600;
+    font-weight: bold;
     font-variant-caps: all-small-caps;
+    margin: 0px;
+    padding-left: 20px;
 
+}
+
+.footercard p {
+    color: white;
+    padding-left: 20px;
 }
 
 .footercard ul li {

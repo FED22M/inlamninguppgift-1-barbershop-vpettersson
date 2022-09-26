@@ -4,6 +4,12 @@
     opacity: 0.9;
     border: none;
     transition: 1s;
+    width: 100vw;
+}
+
+.navlinkactive {
+    color: rgb(191, 146, 91);
+    transition: 1s;
 }
 
 
@@ -36,7 +42,9 @@ p {
     font-family: 'Barlow Semi Condensed', sans-serif;
     list-style-type: none;
     font-variant-caps: all-small-caps;
+
 }
+
 
 .button {
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -109,9 +117,17 @@ p {
 
 
     .navbar:hover {
-        background-color: rgb(191, 146, 91);
+        background-color: rgb(235 232 222);
         color: black;
 
+    }
+
+    /* få menyknapparna att byta färg */
+
+
+    .navlink:hover {
+        color: rgb(191, 146, 91);
+        opacity: 0.9;
     }
 
 
@@ -137,4 +153,24 @@ p {
     #menu-button {
         visibility: hidden;
     }
+
+    /* Makes the cards in section services into 4 columns when over 600px */
+    .card {
+        float: left;
+        width: 25%;
+    }
+
+    /* makes the footer into 4 columns when over 600px */
+
+    .footercard {
+        float: left;
+        width: 25%;
+        background-color: black;
+        color: white;
+        height: 300px;
+        display: grid;
+
+
+    }
+
 }
