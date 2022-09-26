@@ -27,3 +27,19 @@ footer {
 .footercard ul li {
     padding: 10px;
 }
+
+
+
+
+/* makes the footer into 4 columns when over 600px */
+
+@media screen and (min-width: 600px) {
+    .footercard {
+        float: left;
+        width: 25%;
+        background-color: black;
+        color: white;
+        height: 300px;
+        display: grid;
+    }
+}
