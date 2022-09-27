@@ -6,7 +6,7 @@ footer {
 .footercard li {
     font-family: 'Poppins', sans-serif;
     color: white;
-    list-style: square;
+    padding: 10px;
 }
 
 .footercard h2 {
@@ -16,17 +16,54 @@ footer {
     font-variant-caps: all-small-caps;
     margin: 0px;
     padding-left: 20px;
+    line-height: 40px;
+    font-size: 2rem;
 
 }
 
 .footercard p {
     color: white;
-    padding-left: 20px;
+    padding-left: 5%;
+    display: none;
 }
 
-.footercard ul li {
-    padding: 10px;
+.footercard ul {
+    color: white;
+    padding-left: 5%;
 }
+
+.footertitle {
+    display: none;
+}
+
+.footercard li::marker {
+    content: ">";
+}
+
+
+i {
+    color: rgb(191, 146, 91);
+    font-size: 40px;
+
+
+}
+
+.footercard .fa-brands {
+    margin: 10px;
+}
+
+
+.fa-solid {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: left;
+    margin-left: -6%;
+
+}
+
+
+
+
 
 
 
@@ -41,5 +78,9 @@ footer {
         color: white;
         height: 300px;
         display: grid;
+    }
+
+    .footercard p {
+        visibility: visible;
     }
 }

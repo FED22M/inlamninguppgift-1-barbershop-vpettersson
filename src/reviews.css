@@ -1,9 +1,12 @@
 .reviewcard {
-    height: 50vh;
+    height: 37vh;
     width: 90%;
     background-color: white;
     align-self: center;
-    padding: 10% 5% 10% 5%;
+    /* padding: 10% 5% 10% 5%; */
+    position: absolute;
+
+
 
 }
 
@@ -11,7 +14,7 @@
     width: 7rem;
     height: 7rem;
     margin-left: 5%;
-    display: flex;
+
 
 }
 
@@ -23,7 +26,10 @@
     font-family: 'Poppins', sans-serif;
     list-style-type: none;
     background-color: white;
-    text-align: right;
+    text-align: left;
+    margin-left: 1rem;
+
+
 
 
 
@@ -32,6 +38,7 @@
 .reviewcard blockquote {
     font-family: 'Poppins', sans-serif;
     background-color: white;
+    margin: 1rem 1rem 1rem 1rem;
 
 
 }
@@ -42,13 +49,22 @@
 
 .reviews {
     background-color: rgb(235 232 222);
-    text-align: left;
+
 }
 
 .reviews .guldrubriker {
     padding-left: 0%;
     padding-top: 20%;
     text-align: center;
+    z-index: 1;
+
+
+}
+
+.reviewcardfooter {
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
 
 .reviews h3 {
@@ -56,6 +72,8 @@
     text-align: center;
     line-height: 1.8rem;
     padding-bottom: 20%;
+    margin-bottom: 110%;
+    z-index: 1;
 }
 
 .wrapperreviews {
@@ -63,8 +81,23 @@
     width: 100vw;
     display: flex;
     flex-flow: column nowrap;
-    overflow: auto;
-    overflow-x: scroll;
     background-color: rgb(235 232 222);
     padding-bottom: 5%;
+    justify-content: center;
+
+
 }
+
+
+/* .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+} */
