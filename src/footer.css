@@ -15,7 +15,7 @@ footer {
     font-weight: bold;
     font-variant-caps: all-small-caps;
     margin: 0px;
-    padding-left: 20px;
+    padding-left: 5%;
     line-height: 40px;
     font-size: 2rem;
 
@@ -29,15 +29,17 @@ footer {
 
 .footercard ul {
     color: white;
-    padding-left: 5%;
+    list-style-type: none;
 }
 
 .footertitle {
     display: none;
 }
 
-.footercard li::marker {
+.footercard li::before {
     content: ">";
+    padding-right: 5%;
+    list-style-type: none;
 }
 
 
@@ -52,13 +54,37 @@ i {
     margin: 10px;
 }
 
+.footercardcontact {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 10px;
+    background-color: black;
+
+}
+
+.footercardcontact h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    margin: 0px;
+    padding-left: 5%;
+    line-height: 40px;
+    font-size: 2rem;
+}
 
 .fa-solid {
+
     font-size: 1.5rem;
     margin: 1rem;
     text-align: left;
-    margin-left: -6%;
+    margin-right: 5%;
 
+
+}
+
+.footercardcontact ul {
+    list-style-type: none;
 }
 
 

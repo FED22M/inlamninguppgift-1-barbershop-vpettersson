@@ -1,25 +1,56 @@
-.reviewcard {
-    height: 37vh;
-    width: 90%;
-    background-color: white;
-    align-self: center;
-    /* padding: 10% 5% 10% 5%; */
-    position: absolute;
+.reviews {
+    background-color: rgb(235 232 222);
+    height: 100vh;
+    width: 100vw;
 
 
 
 }
+
+.review-cards-wrapper {
+
+    width: 100vw;
+    overflow: auto;
+}
+
+.review-cards {
+    height: 20rem;
+    /* Inte optimalt med 300vw då den behöver ökas ifall man lägger till kort. Vill ha den flexibel om man lägger till fler, men det fick det att fungera för nu */
+    width: 300vw;
+    display: flex;
+    background-color: rgb(235 232 222);
+    justify-content: center;
+    overflow: scroll;
+    gap: 2.5%;
+    /* padding: 0rem 2.5% 0rem 2.5%; */
+    margin-left: 2.5%;
+
+
+}
+
+
+.reviewcard {
+    width: 50%;
+    background-color: white;
+
+
+    /* padding: 10% 5% 10% 5%; */
+
+
+
+}
+
+/* .reviewcardfooter {
+    align-items: left;
+    text-align: bottom;
+} */
+
+
 
 .reviewcard img {
     width: 7rem;
     height: 7rem;
-    margin-left: 5%;
 
-
-}
-
-.reviewcard .stars {
-    color: rgb(191, 146, 91);
 }
 
 .reviewcard ul li {
@@ -29,16 +60,19 @@
     text-align: left;
     margin-left: 1rem;
 
-
-
-
-
 }
+
+.reviewcard .stars {
+    color: rgb(191, 146, 91);
+}
+
+
 
 .reviewcard blockquote {
     font-family: 'Poppins', sans-serif;
     background-color: white;
-    margin: 1rem 1rem 1rem 1rem;
+    height: 35%;
+
 
 
 }
@@ -47,46 +81,22 @@
     color: rgb(191, 146, 91);
 }
 
-.reviews {
-    background-color: rgb(235 232 222);
-
-}
-
 .reviews .guldrubriker {
     padding-left: 0%;
-    padding-top: 20%;
+    padding-top: 12.5%;
     text-align: center;
-    z-index: 1;
-
-
-}
-
-.reviewcardfooter {
-    display: flex;
-    align-items: center;
-    text-align: left;
 }
 
 .reviews h3 {
     font-size: 2rem;
     text-align: center;
     line-height: 1.8rem;
-    padding-bottom: 20%;
-    margin-bottom: 110%;
-    z-index: 1;
-}
+    padding-bottom: 1rem;
 
-.wrapperreviews {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: rgb(235 232 222);
-    padding-bottom: 5%;
-    justify-content: center;
-
+    /* margin-bottom: 110%; */
 
 }
+
 
 
 /* .carousel__viewport {
