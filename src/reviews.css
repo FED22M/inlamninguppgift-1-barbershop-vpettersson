@@ -22,7 +22,6 @@
     justify-content: center;
     overflow: scroll;
     gap: 2.5%;
-    /* padding: 0rem 2.5% 0rem 2.5%; */
     margin-left: 2.5%;
 
 
@@ -34,16 +33,11 @@
     background-color: white;
 
 
-    /* padding: 10% 5% 10% 5%; */
-
 
 
 }
 
-/* .reviewcardfooter {
-    align-items: left;
-    text-align: bottom;
-} */
+
 
 
 
@@ -99,16 +93,75 @@
 }
 
 
+@media screen and (min-width: 600px) {
 
-/* .carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    overflow-x: scroll;
-    counter-reset: item;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-} */
+
+
+
+    .reviews {
+        background-color: rgb(235 232 222);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .reviews .guldrubriker {
+        font-size: 2rem;
+
+        padding-top: 10vh;
+    }
+
+    .reviews h3 {
+        font-size: 3.5rem;
+        padding-top: 3vh;
+        line-height: 3rem;
+    }
+
+    .review-cards {
+        width: 100vw;
+        display: flex;
+        background-color: rgb(235 232 222);
+        justify-content: center;
+        padding-top: 3vh;
+        margin: 0;
+
+        overflow: hidden;
+
+
+    }
+
+    .reviewcard {
+        width: 25%;
+
+    }
+
+    .review-cards-wrapper {
+
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .reviewcard blockquote {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .reviewcardfooter {
+        display: flex;
+        justify-content: baseline;
+        margin-top: 12%;
+        margin-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

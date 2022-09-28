@@ -1,4 +1,3 @@
-/* Generella fonter */
 .navbar {
     background-color: #000;
     opacity: 0.7;
@@ -74,7 +73,7 @@ p {
 .button {
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: transparent;
-    border-style: thick;
+    border-style: solid;
     font-variant-caps: all-small-caps;
     border-color: rgb(191, 146, 91);
     color: rgb(191, 146, 91);
@@ -82,7 +81,7 @@ p {
     width: 45vw;
     height: 1.5rem;
     font-size: 1rem;
-    margin: 2% 5% 0% 5%;
+    margin: 2% 5% 2% 5%;
 }
 
 
@@ -114,6 +113,9 @@ p {
     color: grey;
     font-variant-caps: all-small-caps;
 
+
+
+
 }
 
 /* Set visable when menu have menu-open class */
@@ -142,18 +144,24 @@ p {
 /* Big screen, hide menu button but show menu - endast för dator: */
 
 @media screen and (min-width: 600px) {
+
+    .navlogo {
+        font-size: 2rem;
+    }
+
     .navbar {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+
     }
 
 
     .navbar:hover {
-        background-color: rgb(235 232 222);
+        background-color: rgb(109, 54, 41);
         color: black;
-        opacity: 0.5;
+        height: 7%;
 
     }
 
@@ -162,15 +170,16 @@ p {
 
     .navlink:hover {
         color: rgb(191, 146, 91);
-        opacity: 1;
+
     }
 
 
-
+    /* får menyn att synas igen */
     .menu {
         visibility: visible;
     }
 
+    /* lägger länkarna bredvid varann i navbaren */
     .navlinks {
         color: #fff;
         display: flex;
@@ -179,22 +188,66 @@ p {
 
     }
 
+    /* delar upp länkarna emellan sig*/
+
     .navlinks>li {
         padding: 0 0.25rem;
+        font-size: 1.5rem;
 
 
     }
 
+
+    .bannerintro {
+        margin-left: 50vw;
+        margin-right: 15vw;
+        padding-bottom: 25vh;
+    }
+
+    .bannerintro .guldrubriker {
+        font-size: 2rem;
+    }
+
+    .introtext h3 {
+        font-size: 4rem;
+    }
+
+    .wrapperborder {
+
+        padding-left: 6vw;
+        border-left: 3px solid rgb(191, 146, 91);
+
+
+
+    }
+
+    .wrapperborder p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        padding: 0;
+
+    }
+
+    .button {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        background-color: transparent;
+        border-style: solid;
+        font-variant-caps: all-small-caps;
+        border-color: rgb(191, 146, 91);
+        color: rgb(191, 146, 91);
+        text-align: center;
+        width: 12.5vw;
+        height: 1.5rem;
+        font-size: 1rem;
+        margin: 2vw 0vw 0vw 0vw;
+
+    }
+
+
+
+    /* döljer menyknappen för mobile, på desktop*/
     #menu-button {
         visibility: hidden;
     }
-
-    /* Makes the cards in section services into 4 columns when over 600px */
-    .card {
-        float: left;
-        width: 25%;
-    }
-
-
 
 }

@@ -97,16 +97,46 @@ i {
 /* makes the footer into 4 columns when over 600px */
 
 @media screen and (min-width: 600px) {
+
+    footer {
+        display: flex;
+        width: 100vw;
+
+    }
+
+    .footercard h2 {
+        display: contents;
+    }
+
+    .allfootercards {
+        width: 100vw;
+        display: flex;
+
+    }
+
     .footercard {
         float: left;
-        width: 25%;
+        width: 25vw;
         background-color: black;
         color: white;
-        height: 300px;
-        display: grid;
+        height: 100%;
+        width: 75vw;
+        flex-direction: row;
+
     }
 
     .footercard p {
-        visibility: visible;
+        display: contents;
+    }
+
+    .footercardcontact {
+        width: 75%;
+    }
+
+    .fa-brands {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+
     }
 }

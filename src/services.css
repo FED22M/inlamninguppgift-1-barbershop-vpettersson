@@ -5,7 +5,7 @@
     margin-top: -7rem;
     padding-bottom: 1rem;
     font-size: 2rem;
-    
+
 
 }
 
@@ -49,14 +49,40 @@
 
 
 @media screen and (min-width: 600px) {
+
+    .services {
+        display: flex;
+        height: 50vh;
+        width: 100vw;
+    }
+
     .card img {
         place-items: center;
-        width: 15rem;
-        height: 15rem;
-        margin-top: -11rem;
+        width: 13rem;
+        height: 13rem;
+        margin-top: -10rem;
         z-index: 1;
+        position: relative;
 
 
+    }
+
+
+
+    /* Makes the cards in section services into 4 columns when over 600px */
+    .card {
+
+        text-align: center;
+        place-items: center;
+        height: 100%;
+    }
+
+    .card h2 {
+        font-size: 2.5rem;
+    }
+
+    .card p {
+        font-size: 1rem;
     }
 
 
