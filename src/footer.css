@@ -101,42 +101,66 @@ i {
     footer {
         display: flex;
         width: 100vw;
-
     }
 
     .footercard h2 {
         display: contents;
+
     }
 
     .allfootercards {
         width: 100vw;
         display: flex;
+        flex-wrap: left;
+        justify-content: space-around;
+        align-items: space-around;
 
     }
 
+    .allfootercards h2 {
+        padding: 0;
+    }
+
     .footercard {
-        float: left;
+
         width: 25vw;
         background-color: black;
         color: white;
         height: 100%;
         width: 75vw;
-        flex-direction: row;
-
+        /* flex-direction: column; */
     }
 
     .footercard p {
         display: contents;
+
     }
 
     .footercardcontact {
         width: 75%;
+        padding: 0;
     }
 
-    .fa-brands {
-        display: flex;
-        flex-direction: row;
-        justify-content: baseline;
+    .footercard .fa-brands {
+        /* display: flex; */
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+
+
+        width: 40px;
 
     }
+
+    .allfootercards .footercard .footertitle {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .allfootercards .footercard p {
+        display: block;
+        padding: 0;
+    }
+
 }
