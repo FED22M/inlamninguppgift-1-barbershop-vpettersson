@@ -10,7 +10,6 @@
 .about_us h3 {
     padding: 5%;
     margin-top: -5%;
-    font-style: bold;
     font-size: 2rem;
 }
 
@@ -43,6 +42,8 @@
 }
 
 @media screen and (min-width: 600px) {
+
+    /* Osäker om denna riktigt fungerar, men jag provade att stylea den första bilden utan att stylea den sista (kalendern)  */
     .about_us img:first-of-type {
         width: 35vw;
         height: 50%;

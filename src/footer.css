@@ -111,9 +111,8 @@ i {
     .allfootercards {
         width: 100vw;
         display: flex;
-        flex-wrap: left;
         justify-content: space-around;
-        align-items: space-around;
+
 
     }
 

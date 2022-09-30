@@ -2,9 +2,6 @@
     background-color: rgb(235 232 222);
     height: 100vh;
     width: 100vw;
-
-
-
 }
 
 .review-cards-wrapper {
@@ -15,7 +12,7 @@
 
 .review-cards {
     height: 20rem;
-    /* Inte optimalt med 300vw då den behöver ökas ifall man lägger till kort. Vill ha den flexibel om man lägger till fler, men det fick det att fungera för nu */
+    /* Inte optimalt med 300vw då den behöver ökas ifall man lägger till kort. Vill ha den flexibel om man lägger till fler.. har du förlsag på hur jag borde gjort? */
     width: 300vw;
     display: flex;
     background-color: rgb(235 232 222);
@@ -23,28 +20,17 @@
     overflow: scroll;
     gap: 2.5%;
     margin-left: 2.5%;
-
-
 }
 
 
 .reviewcard {
     width: 50%;
     background-color: white;
-
-
-
-
 }
-
-
-
-
 
 .reviewcard img {
     width: 7rem;
     height: 7rem;
-
 }
 
 .reviewcard ul li {
@@ -66,10 +52,6 @@
     font-family: 'Poppins', sans-serif;
     background-color: white;
     height: 30%;
-
-
-
-
 }
 
 .customer {
@@ -87,15 +69,10 @@
     text-align: center;
     line-height: 1.8rem;
     padding-bottom: 1rem;
-
-    /* margin-bottom: 110%; */
-
 }
 
 
 @media screen and (min-width: 600px) {
-
-
 
 
     .reviews {
@@ -106,7 +83,6 @@
 
     .reviews .guldrubriker {
         font-size: 2rem;
-
         padding-top: 10vh;
     }
 
@@ -123,10 +99,7 @@
         justify-content: center;
         padding-top: 3vh;
         margin: 0;
-
         overflow: hidden;
-
-
     }
 
     .reviewcard {
@@ -135,7 +108,6 @@
     }
 
     .review-cards-wrapper {
-
         width: 100vw;
         overflow: hidden;
     }
@@ -147,7 +119,6 @@
 
     .reviewcardfooter {
         display: flex;
-        justify-content: baseline;
         margin-top: 12%;
         margin-left: 1rem;
     }

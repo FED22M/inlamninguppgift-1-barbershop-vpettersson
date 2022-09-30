@@ -65,11 +65,7 @@
         position: relative;
     }
 
-
-
-    /* Makes the cards in section services into 4 columns when over 600px */
     .card {
-
         text-align: center;
         place-items: center;
         height: 100%;

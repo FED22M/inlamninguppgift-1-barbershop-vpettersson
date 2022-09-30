@@ -1,13 +1,11 @@
-/* Importera bakgrundsbild på main main
-{
-background-image: url('/images/bild.png')
-} */
 @import url(headerbanner.css);
 @import url(services.css);
 @import url(aboutus.css);
 @import url(reviews.css);
 @import url(footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Poppins:wght@200&display=swap');
+
+
 
 * {
     margin: 0;
