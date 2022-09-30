@@ -1,0 +1,165 @@
+footer {
+    background-color: black;
+
+}
+
+.footercard li {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+.footercard h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    margin: 0px;
+    padding-left: 5%;
+    line-height: 40px;
+    font-size: 2rem;
+
+}
+
+.footercard p {
+    color: white;
+    padding-left: 5%;
+    display: none;
+}
+
+.footercard ul {
+    color: white;
+    list-style-type: none;
+}
+
+.footertitle {
+    display: none;
+}
+
+.footercard li::before {
+    content: ">";
+    padding-right: 5%;
+    list-style-type: none;
+}
+
+
+i {
+    color: rgb(191, 146, 91);
+    font-size: 40px;
+
+
+}
+
+.footercard .fa-brands {
+    margin: 10px;
+}
+
+.footercardcontact {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 10px;
+    background-color: black;
+
+}
+
+.footercardcontact h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    margin: 0px;
+    padding-left: 5%;
+    line-height: 40px;
+    font-size: 2rem;
+}
+
+.fa-solid {
+
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: left;
+    margin-right: 5%;
+
+
+}
+
+.footercardcontact ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+/* makes the footer into 4 columns when over 600px */
+
+@media screen and (min-width: 600px) {
+
+    footer {
+        display: flex;
+        width: 100vw;
+    }
+
+    .footercard h2 {
+        display: contents;
+
+    }
+
+    .allfootercards {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .allfootercards h2 {
+        padding: 0;
+    }
+
+    .footercard {
+
+        width: 25vw;
+        background-color: black;
+        color: white;
+        height: 100%;
+        width: 75vw;
+        /* flex-direction: column; */
+    }
+
+    .footercard p {
+        display: contents;
+
+    }
+
+    .footercardcontact {
+        width: 75%;
+        padding: 0;
+    }
+
+    .footercard .fa-brands {
+        /* display: flex; */
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+
+
+        width: 40px;
+
+    }
+
+    .allfootercards .footercard .footertitle {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .allfootercards .footercard p {
+        display: block;
+        padding: 0;
+    }
+
+}

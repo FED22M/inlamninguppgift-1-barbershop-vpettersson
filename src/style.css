@@ -1,0 +1,24 @@
+@import url(headerbanner.css);
+@import url(services.css);
+@import url(aboutus.css);
+@import url(reviews.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Poppins:wght@200&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url(banner.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
